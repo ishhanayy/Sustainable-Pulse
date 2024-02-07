@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+
 .App {
   text-align: center;
 }
@@ -35,4 +38,306 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.image
+{
+  margin-top: 60px;
+  margin-bottom: 90px;
+  height: 5%;
+  width: 70%;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav
+{
+  height: 60px;
+  background-color: rgb(1, 106, 112);
+}
+
+.div2
+{
+  background-color: rgb(255, 255, 221);
+}
+
+.div3
+{
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(255, 255, 221);
+}
+
+.div3
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.challengeMotivation
+{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+  font-size: x-large;
+  font-weight: 500;
+  width: 70%;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(25, 71, 17);
+}
+
+.ChallengeButton
+{
+  padding: 8px;
+  margin-top: 40px;
+  margin-bottom: 90px;
+  border-radius: 15px;
+  border: 2px solid rgb(114, 134, 90);
+  background-color: rgb(162, 197, 121);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.ChallengeButton:hover
+{
+  border: 4px solid rgb(114, 134, 90);
+  background-color: rgb(154, 196, 107);
+  transform: scale(1.05);
+}
+
+.Modal-wrapper
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #444444;
+  opacity: 60%;
+}
+
+.Modal-container
+{
+  margin: 0%;
+  position: fixed;
+  max-width: 30rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.cactus-div
+{
+  background :radial-gradient(circle at bottom, white, rgb(255, 255, 221));
+  padding: 80px;
+}
+
+.cactus
+{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 20%;
+  width: 20%;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.stories-box
+{
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(255, 255, 221);
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.stories-box-head
+{
+  font-size: xx-large;
+  font-weight: 400;
+  color: rgb(25, 71, 17);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.story-container
+{
+  margin-left: 15%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.story-x
+{
+  cursor: pointer;
+  width: fit-content;
+  margin: 30px;
+  padding: 25px;
+  border-radius: 17px;
+  text-align: justify;
+  background-color: rgba(34, 102, 13, 0.479);
+  color: rgb(25, 71, 17);
+  font-size: 17px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-width: 100%;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.story-heading
+{
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.644);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.story-tag
+{
+  color: rgba(25, 71, 17, 0.742);
+  font-style: italic;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* .story-body
+{
+} */
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.slider-nav button {
+  background-color: #72af468a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 6px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.slider-nav button:hover
+{
+  background-color: #95e45cbe;
+  transform: scale(1.05);
+}
+
+.commonButton
+{
+  cursor: pointer;
+  margin-left: 12%;
+  margin-right: 12%;
+  padding: 6px;
+  padding-left: 13px;
+  padding-right: 13px;
+  background-color: #3861268b;
+  border-radius: 9px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.commonButton:hover
+{
+  background-color: #386126b6;
+  transform: scale(1.05);
+}
+
+.buttons
+{
+  margin-bottom: 17px;
+}
+
+.NextButton
+{
+  cursor: pointer;
+  padding: 6px;
+  background-color: rgba(204, 233, 243, 0.699);
+  border-radius: 6px;
+  border: none;
+  color: rgb(46, 46, 46);
+}
+
+.NextButton:hover
+{
+  background-color: rgb(173, 221, 239);
+  transform: scale(1.05);
+}
+
+.Challenges
+{
+  font-family: 'Poppins', sans-serif;
+}
+
+.progressReport
+{
+  margin: 8px;
+  margin-bottom: 16px;
+}
+
+.listHeading
+{
+  color: #456e348b;
+}
+
+.list
+{
+  list-style-type: none;
+  text-align: justify;
+  padding: 0%;
+}
+
+.list li
+{
+  background-color: #456e348b;
+  border-radius: 6px;
+  margin-top: 4px;
+  padding-left: 4px;
+  cursor: pointer;
+}
+
+.list li:hover
+{
+  transform:scale(1.05)
+}
+
+.love
+{
+  font-family: 'Diphylleia', serif;
+  color: rgb(29, 67, 0);
+  font-size: 17px;
+  padding-bottom: 6px;
+  font-weight: 590;
+}
+
+.love span
+{
+  font-style:inherit;
+  font-family: 'Diphylleia', serif;
+  font-size: 18px;
+  font-weight: 599;
+  color: rgba(43, 99, 0, 0.822);
 }
