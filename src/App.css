@@ -42,17 +42,30 @@
 
 .image
 {
-  margin-top: 60px;
+  margin-left: 3vw;
+  margin-top: 110px;
   margin-bottom: 90px;
-  height: 5%;
   width: 70%;
   border-radius: 50px;
   justify-content: center;
   align-items: center;
 }
 
-#expandable-image {
-  transition: transform 0.3s ease-out;
+@keyframes driftAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.drifting-container {
+  position: relative;
+  z-index: 0;
 }
 
 .nav
@@ -61,9 +74,51 @@
   background-color: rgb(1, 106, 112);
 }
 
+@media (min-width: 150px) and (max-width: 965px) {
+  
+  .BohemianPic {
+    display: none;
+  }
+}
+
+.BohemianPic {
+  margin-left: 30px;
+  margin-top: 60px;
+  position: absolute; /* Change from static to absolute */
+  width: 92px;
+  height: 166px;
+}
+
+.drifting-image {
+  animation: driftAnimation 4s infinite; /* Adjust the duration as needed */
+}
+
+
+#expandable-image {
+  transition: transform 0.3s ease-out;
+}
+
+.nav
+{
+  position: fixed;
+  left:0;
+  display: flex;
+  align-items:flex-start;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 10px;
+  height: 40px;
+  background-color: rgb(1, 106, 112);
+  margin-bottom: 50px;
+  z-index: 1;
+}
+
 .div2
 {
   background-color: rgb(255, 255, 221);
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
 }
 
 .div3
